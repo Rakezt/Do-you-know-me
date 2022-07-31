@@ -4,7 +4,7 @@ console.log("Welcome " + userQuestion +", lets try how much you know me...")
 var score=0;
 var highscore={
   name:"Peter",
-  score:3,
+  score:5,
 }
 
 function game(question, answer){
@@ -14,7 +14,7 @@ function game(question, answer){
     score=score+1;
   }
   else {  
-  console.log("You are wrong");
+  console.log("Wrong");
   }  
   console.log("Your score is " + score);
   console.log("___________");
@@ -30,6 +30,12 @@ var questions=[{
 }, {
   question:"Where is my native place? ",
   answer:"Manipur",
+}, {
+  question:"What is my hobby? ",
+  answer:"Playing football",
+}, {
+  question:"Which dish can I die for? ",
+  answer:"Butter Chicken",
 }];
 
 for (var i=0; i<questions.length;i++){
@@ -39,4 +45,4 @@ for (var i=0; i<questions.length;i++){
 
 console.log("Contratulation,"+userQuestion+" you have score " + score);
 console.log("The highest score as of now is "+ highscore.name +" and he score a perfect " + highscore.score);
-console.log("If you have cross the highscore, send me a screenshot @ 9108671147, thanks a lot");
+console.log("If you have cross the highest score, send me a screenshot @ 9108671147, thanks a lot");
